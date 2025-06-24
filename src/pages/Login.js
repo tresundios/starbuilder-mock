@@ -54,8 +54,6 @@ const Login = () => {
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-2xl relative flex-1">
           <div className="absolute inset-0 rounded-xl bg-black/60 backdrop-blur-md z-0" style={{ filter: 'blur(2px)' }}></div>
           <div className="relative z-10 p-6 rounded-xl w-full">
-            <h1 className="text-white text-4xl font-black leading-tight tracking-[-0.033em]">Login</h1>
-            <p className="text-white text-base font-normal leading-normal mt-4">This is a placeholder for the Login page content.</p>
             <div className="flex flex-col items-center justify-center min-h-[60vh] px-4 py-10">
               <h1 className="text-white text-3xl font-bold mb-6">Login to Starbuilder Music</h1>
               <form onSubmit={handleSubmit} className="bg-[#222b36] rounded-lg p-8 w-full max-w-md space-y-4">

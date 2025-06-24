@@ -53,12 +53,12 @@ const Home = () => (
             <div className="flex items-center gap-4 mb-4">
               <img src="/logo.png" alt="Starbuilder Logo" className="w-[220px] h-full object-contain" />
             </div>
-            <h1 className="font-black leading-tight tracking-[-0.033em] mb-2" style={{ color: '#c9d1d9', fontSize: '2.5rem' }}>You Can Become a Star</h1>
-            <p className="mb-2" style={{ color: '#c9d1d9' }}>Are you a songwriter?</p>
-            <p className="mb-2" style={{ color: '#c9d1d9' }}>If you are you love music as do many people around the world.</p>
-            <p className="mb-2" style={{ color: '#c9d1d9' }}>Starbuilder Music has been created to give extensive support and encouragement to songwriters.</p>
-            <p className="mb-2" style={{ color: '#c9d1d9' }}>Songwriters upload songs and music lovers vote on them, a high average mark indicating the potential for unpublished songs. Many of those in the top ten each month will be invited to perform at events we organise.</p>
-            <p className="mb-2" style={{ color: '#c9d1d9' }}>There is no charge to upload your songs. Music lover voters and will be rewarded with significant discount vouchers for events, products and services and other benefits.</p>
+            <h1 className="font-black leading-tight tracking-[-0.033em] mb-2" style={{ color: '#FFFFFF', fontSize: '2.5rem' }}>You Can Become a Star</h1>
+            <p className="mb-2" style={{ color: '#FFFFFF' }}>Are you a songwriter?</p>
+            <p className="mb-2" style={{ color: '#FFFFFF' }}>If you are you love music as do many people around the world.</p>
+            <p className="mb-2" style={{ color: '#FFFFFF' }}>Starbuilder Music has been created to give extensive support and encouragement to songwriters.</p>
+            <p className="mb-2" style={{ color: '#FFFFFF' }}>Songwriters upload songs and music lovers vote on them, a high average mark indicating the potential for unpublished songs. Many of those in the top ten each month will be invited to perform at events we organise.</p>
+            <p className="mb-2" style={{ color: '#FFFFFF' }}>There is no charge to upload your songs. Music lover voters and will be rewarded with significant discount vouchers for events, products and services and other benefits.</p>
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start mt-6">
               <Link to="/register" className="flex min-w-[84px] max-w-[480px] items-center justify-center rounded-full h-10 px-4" style={{ background: '#58a6ff', color: '#0d1117', fontWeight: 700 }}>Sign Up Songwriter</Link>
               <Link to="/register" className="flex min-w-[84px] max-w-[480px] items-center justify-center rounded-full h-10 px-4" style={{ background: '#58a6ff', color: '#0d1117', fontWeight: 700 }}>Sign Up Musiclover</Link>
@@ -81,7 +81,7 @@ const Home = () => (
       </div>
       {/* Featured Music Section */}
       <div className="px-4 md:px-40">
-        <h2 className="font-bold leading-tight tracking-[-0.015em] pb-3" style={{ color: '#c9d1d9', fontSize: '1.375rem' }}>Featured Music</h2>
+        <h2 className="font-bold leading-tight tracking-[-0.015em] pb-3" style={{ color: '#FFFFFF', fontSize: '1.375rem' }}>Featured Music</h2>
         <div className="flex overflow-x-auto gap-4 pb-4">
           {featuredMusic.map((item, idx) => (
             <div key={idx} className="flex flex-col gap-4 rounded-lg min-w-[240px] p-4" style={{ background: '#161b22', border: '1px solid #24292e' }}>
@@ -97,8 +97,8 @@ const Home = () => (
       {/* Info Section for Music Lovers */}
       <div className="flex flex-col gap-10 px-4 py-10 md:px-40">
         <div className="flex flex-col gap-4">
-          <h1 className="font-bold leading-tight max-w-[720px]" style={{ color: '#c9d1d9', fontSize: '2rem' }}>Explore the World of Music</h1>
-          <p className="text-base font-normal leading-normal max-w-[720px]" style={{ color: '#8b949e' }}>Find your next favorite song or artist with our extensive music library and personalized recommendations.</p>
+          <h1 className="font-bold leading-tight max-w-[720px]" style={{ color: '#FFFFFF', fontSize: '2rem' }}>Explore the World of Music</h1>
+          <p className="text-base font-normal leading-normal max-w-[720px]" style={{ color: '#FFFFFF' }}>Find your next favorite song or artist with our extensive music library and personalized recommendations.</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
           <div className="flex flex-1 gap-3 rounded-lg p-4 flex-col" style={{ background: '#161b22', border: '1px solid #24292e' }}>
