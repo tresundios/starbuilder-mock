@@ -41,7 +41,7 @@ const Home = () => (
       {/* Hero/Header Section */}
       <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center py-10 px-4 gap-8">
         {/* Left-aligned image */}
-        <div className="flex-shrink-0 w-full max-w-xs lg:max-w-md mb-8 lg:mb-0 h-full lg:h-auto flex lg:block items-start relative">
+        <div className="hidden md:block w-full max-w-xs lg:max-w-md mb-8 lg:mb-0 h-full lg:h-auto flex lg:block items-start relative">
           {/* Animated neon gradient overlay */}
           <span className="absolute inset-0 rounded-lg neon-gradient-overlay z-10"></span>
           <img src="/back.jpg" alt="Background Art" className="w-full h-full lg:h-[480px] rounded-lg shadow-lg object-cover object-top relative z-20" style={{ minWidth: 220, maxHeight: '100%', maxHeight: 480, opacity: 0.6 }} />
@@ -51,7 +51,9 @@ const Home = () => (
           <div className="absolute inset-0 rounded-xl bg-black/60 backdrop-blur-md z-0" style={{ filter: 'blur(2px)' }}></div>
           <div className="relative z-10 p-6 rounded-xl">
             <div className="flex items-center gap-4 mb-4">
-              <img src="/logo.png" alt="Starbuilder Logo" className="w-[220px] h-full object-contain" />
+              <div className="hidden md:block w-full max-w-xs lg:max-w-md mb-8 lg:mb-0 h-full lg:h-auto flex lg:block items-start relative">
+                <img src="/logo.png" alt="Starbuilder Logo" className="w-[220px] h-full object-contain" />
+              </div>
             </div>
             <h1 className="font-black leading-tight tracking-[-0.033em] mb-2" style={{ color: '#FFFFFF', fontSize: '2.5rem' }}>You Can Become a Star</h1>
             <p className="mb-2" style={{ color: '#FFFFFF' }}>Are you a songwriter?</p>

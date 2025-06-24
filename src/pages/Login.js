@@ -46,7 +46,7 @@ const Login = () => {
     <>
       <div className="px-40 flex flex-col lg:flex-row items-center lg:items-start justify-center py-10 gap-8 relative">
         {/* Left-aligned image */}
-        <div className="flex-shrink-0 w-full max-w-xs lg:max-w-md mb-8 lg:mb-0 h-full lg:h-auto flex lg:block items-start relative">
+        <div className="hidden md:flex flex-shrink-0 w-full max-w-xs lg:max-w-md mb-8 lg:mb-0 h-full lg:h-auto flex lg:block items-start relative">
           <span className="absolute inset-0 rounded-lg neon-gradient-overlay z-10"></span>
           <img src="/back.jpg" alt="Background Art" className="w-full h-full lg:h-[400px] rounded-lg shadow-lg object-cover object-top relative z-20" style={{ minWidth: 220, maxHeight: '100%', maxHeight: 400 }} />
         </div>
