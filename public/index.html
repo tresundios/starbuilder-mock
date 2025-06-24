@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starbuilder Music React</title>
+    <link rel="icon" type="image/png" href="/starbuilder-white-logo.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Be+Vietnam+Pro:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0fffc1 0%, #ff00ea 25%, #00bfff 50%, #fffb00 75%, #7e0fff 100%);
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .neon-glow {
+        box-shadow: 0 0 32px 8px #0fffc1, 0 0 64px 16px #7e0fff;
+        transition: box-shadow 0.3s;
+      }
+      .neon-border {
+        border-radius: 0.5rem;
+        z-index: 2;
+        pointer-events: none;
+        background: linear-gradient(270deg, #0fffc1, #ff00ea, #00bfff, #fffb00, #7e0fff, #0fffc1);
+        background-size: 800% 800%;
+        animation: neon-border-anim 10s ease-in-out infinite;
+        opacity: 0.7;
+      }
+      @keyframes neon-border-anim {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .neon-gradient-overlay {
+        background: linear-gradient(120deg, #0fffc1 0%, #ff00ea 40%, #00bfff 70%, #fffb00 100%);
+        opacity: 0.45;
+        mix-blend-mode: screen;
+        animation: neon-gradient-move 8s linear infinite alternate;
+        filter: blur(2px);
+      }
+      @keyframes neon-gradient-move {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html> 
